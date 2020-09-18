@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#meme-container {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9Uy6nJt1R9Kylx9NO5Io_lgW_IDmkxmPY8A&usqp=CAU");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 500px 300px;
+}
+#final-meme {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.meme-section {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.top {
+  position: absolute;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
+  font-weight: 900;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
+  font-weight: 900;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: inherit;
+  word-wrap: break-word;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
